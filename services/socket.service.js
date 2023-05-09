@@ -35,7 +35,7 @@ function setupSocketAPI(http) {
       gIo.emit('task-updated', data)
     })
     socket.on('board-updated', (board) => {
-      // console.log('board update', board)
+      console.log('board update', board)
       logger.info(
         `New board update from socket [id: ${socket.id}], emitting to boardId ${socket.myTopic}`
       )
